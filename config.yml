@@ -1,0 +1,24 @@
+
+recipe: default.v1
+assistant_id: placeholder_default
+language: pl
+
+pipeline:
+- name: SpacyNLP
+  model: "pl_core_news_lg"
+- name: SpacyTokenizer
+- name: SpacyEntityExtractor
+  dimensions: ["date", "geogName", "orgName", "persName", "time"]
+- name: SpacyFeaturizer
+  pooling: mean
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 1
+
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
