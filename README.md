@@ -10,19 +10,19 @@
 
 Install spaCy Polish pipeline
 ```bash
-$ python -m spacy download pl_core_news_sm
+$ py -m spacy download pl_core_news_sm
 ```
 Train rasa model
 ```bash
-$ python -m rasa train
+$ py -m rasa train
 ```
 Run rasa server
 ```bash
-$ python -m rasa run actions
+$ py -m rasa run actions
 ```
 Run conversation with bot
 ```bash
-$ python -m rasa shell
+$ py -m rasa shell
 ```
 
 
