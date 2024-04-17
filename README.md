@@ -10,7 +10,7 @@
 
 Install spaCy Polish pipeline
 ```bash
-$ py -m spacy download pl_core_news_sm
+$ py -m spacy download pl_core_news_lg
 ```
 Train rasa model
 ```bash
