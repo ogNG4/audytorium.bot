@@ -3,89 +3,167 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Hej
+    - hej
+    - Hejka
+    - hejka
+    - Cześć
+    - czesc
+    - Siema
+    - siema
+    - Hello
+    - helo
+    - Dzień dobry
+    - dzien dobry
+    - Dobry dzień
+    - dobry dzien
+    - Witaj
+    - witaj
+    - witam czule
+    - Witaj ponownie
+    - Cześć wszystkim
+    - Eluwina 
+    - hejka naklejka 
+    - Jest tu ktoś?
+    - Hello darkness my old friend
+    - halo 
 
-- intent: goodbye
+- intent: request_start
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Możemy zaczynać?
+    - mozemy zaczynac
+    - Chcę już mieć to za sobą
+    - start
+    - Start
+    - Zaczynamy
+    - Lecimy
+    - Dawaj
 
 - intent: affirm
   examples: |
+    - Tak
+    - tak
+    - ta
+    - Zgadza się
+    - zgadam sie
+    - Oczywiście
+    - oczywiscie
+    - oczywiście
+    - To brzmi dobrze
+    - dobrze
+    - git
+    - Poprawnie
+    - Może być
+    - moze byc
+    - Zaczynaj
+    - Zaczynajmy
+    - jes
     - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - yeah
+    - zaczynamy
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - Nie
+    - nie
+    - nie mam czasu
+    - nie dzięki
+    - nie dzieki
+    - nie dziękuję
+    - nie dziekuje
+    - Nie, dzięki 
+    - Nie, dziękuję
+    - No
+    - Nie tym razem
+    - mam inne plany
+    - Mam inne plany
 
-- intent: mood_great
+- intent: thankyou
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
+    - Dziękuję za odpowiedzi
+    - Dziekuje za odpowiedzi
+    - dzięki
+    - dzieki
+
+#- intent: chitchat
+#  examples: |
+
+- intent: stop
+  examples: |
+    - nara
+    - Dość
+    - dosc
+    - koniec
+    - Koniec
+    - idę stąd
+    - Coś jeszcze?
+    - cos jeszcze
+    - skończ już 
+    - skoncz juz
+    - stop
+    - STOP
+    - Stop
+    - To wszystko?
+
+#- intent: bot_challenge
+  #examples: |
+    #- Czy jesteś botem?
+    #- Czy jesteś człowiekiem?
+    #- Czy rozmawiam z botem?
+    #- Czy rozmawiam z człowiekiem?
+    #- czy jestes botem?
+    #- czy jestes czlowiekiem?
+    #- czy rozmawiam z botem?
+    #- czy rozmawiam z czlowiekiem?
+
+- intent: mood_happy
+  examples: |
+    - idealnie
+    - świetnie
+    - wspaniale
+    - czuję się dobrze
     - so good
     - so perfect
 
 - intent: mood_unhappy
   examples: |
     - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
+    - smutno mi
+    - jestem smutny
+    - nie czuję się dobrze
+    - rozczarowałeś mnie
+    - super smutno
+    - jestem nieszczęśliwy
+    
+- intent: goodbye
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - see you
+    - pa
+    - do zobaczenia
+    - Do zobaczenia
+    - Miłego dnia
+    - Do widzenia
+
+
+- lookup: keywords
+  examples: |
+    - BHP
+    - bhp
+    - bezpieczeństwo
+    - bezpieczenstwo
+    - niebezpieczenstwo
+    - papieros
+    - papierosy
+    - monitorują
+    - monitoruja
+    - sprawdzają
+    - sprawdzaja
+    - weryfikują
+    - weryfikuja
+    - pracodawca
+    - linia
+    - produkcja
+    - produkcyjna
+    - ergonomia
+    - ergonomię
+    - ergonomie

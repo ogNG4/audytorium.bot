@@ -2,12 +2,47 @@ version: "3.1"
 
 rules:
 
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Request start audition
+  steps:
+  - intent: request_start
+  - action: utter_start
+
+- rule: Affirm 
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Deny anytime the user says something unknown
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Thank you
+  steps:
+  - intent: thankyou
+  - action: utter_noworries
+
+#- rule: Chitchat
+  #steps:
+  #- intent: chitchat
+  #- action: utter_chitchat
+
+- rule: Stop when user says stop
+  steps:
+  - intent: stop
+  - action: utter_stop
+
+#- rule: Say 'I am a bot' anytime the user challenges
+  #steps:
+  #- intent: bot_challenge
+  #- action: utter_iamabot
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot

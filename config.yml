@@ -15,7 +15,8 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 1
+  epochs: 25
+  
 
 
 # Configuration for Rasa Core.

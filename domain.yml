@@ -2,15 +2,15 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
   - affirm
   - deny
   - thankyou
-  - chitchat
+  #- chitchat
+  - request_start
   - stop
-  #- mood_great
-  #- mood_unhappy
-  - bot_challenge
+  - mood_happy
+  - mood_unhappy
+  #- bot_challenge
   - goodbye
 
 responses:
@@ -26,27 +26,33 @@ responses:
   utter_noworries:
   - text: "Nie ma sprawy!"
 
-  utter_chitchat:
-  - text: "Oczywiście! Czym mogę się z Tobą podzielić?"
+  utter_start:
+  - text: "Do dzieła!"
+
+  #utter_chitchat:
+  #- text: "Oczywiście! Czym mogę się z Tobą podzielić?"
 
   utter_stop:
-  - text: "Dobrze, przerywam."
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Dobrze, kończymy na dzisiaj."
 
   #utter_did_that_help:
-  #- text: "Did that help you?"
+  #- text: "Czy mogę Ci jeszcze jakoś pomóc?"
 
-  #utter_happy:
-  #- text: "Great, carry on!"
+  utter_happy:
+  - text: "Super, oby tak dalej!"
+
+  utter_cheer_up:
+  - text: "Czy mogę Ci jakoś poprawić humor?"
 
   utter_goodbye:
   - text: "Do widzenia! Miłego dnia!"
 
-  utter_iamabot:
-  - text: "Jestem botem, działającym na platformie Rasa."
+  #utter_iamabot:
+  #- text: "Jestem botem, działającym na platformie Rasa."
+
+actions:
+  #- action_
+  - action_ask_question
 
 session_config:
   session_expiration_time: 60
