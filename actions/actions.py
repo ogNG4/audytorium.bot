@@ -202,6 +202,186 @@ class ActionProcessAnswer10(Action):
         dispatcher.utter_message(text=response)
         return []
 
+class ActionAskQuestion11(Action):
+    def name(self) -> str:
+        return "action_ask_question_11"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakiego typu uwagi pracownicy zgłaszają dotyczące infrastruktury?")
+        return [ActionListen()]
+
+class ActionProcessAnswer11(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion12(Action):
+    def name(self) -> str:
+        return "action_ask_question_12"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma zapewnia zgodność z regulacjami dotyczącymi ochrony środowiska?")
+        return [ActionListen()]
+
+class ActionProcessAnswer12(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion13(Action):
+    def name(self) -> str:
+        return "action_ask_question_13"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie istnieją plany ewakuacyjne i ćwiczenia dla pracowników w przypadku nagłych sytuacji, takich jak pożar czy awaria?")
+        return [ActionListen()]
+
+class ActionProcessAnswer13(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion14(Action):
+    def name(self) -> str:
+        return "action_ask_question_14"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zapobiegania nadużyć w obszarze magazynowania?")
+        return [ActionListen()]
+
+class ActionProcessAnswer14(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion15(Action):
+    def name(self) -> str:
+        return "action_ask_question_15"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma monitoruje i ocenia wydajność procesów produkcyjnych i magazynowych? Jakie są stosowane wskaźniki wydajności?")
+        return [ActionListen()]
+
+class ActionProcessAnswer15(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion16(Action):
+    def name(self) -> str:
+        return "action_ask_question_16"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie działania podejmowane są w celu minimalizacji strat materiałowych w procesie produkcyjnym i magazynowym?")
+        return [ActionListen()]
+
+class ActionProcessAnswer16(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion17(Action):
+    def name(self) -> str:
+        return "action_ask_question_17"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma reaguje na zmiany technologiczne i innowacje w celu poprawy wydajności i konkurencyjności?")
+        return [ActionListen()]
+
+class ActionProcessAnswer17(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion18(Action):
+    def name(self) -> str:
+        return "action_ask_question_18"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zapewnienia jakości wyrobów na każdym etapie produkcji i magazynowania?")
+        return [ActionListen()]
+
+class ActionProcessAnswer18(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion19(Action):
+    def name(self) -> str:
+        return "action_ask_question_19"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zarządzania ryzykiem w obszarze produkcji i magazynowania, i jak są one wdrażane?")
+        return [ActionListen()]
+
+class ActionProcessAnswer19(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
+class ActionAskQuestion20(Action):
+    def name(self) -> str:
+        return "action_ask_question_20"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma minimalizuje wpływ zmiany dostawców na ciągłość produkcji?")
+        return [ActionListen()]
+
+class ActionProcessAnswer20(Action):
+    def name(self) -> str:
+        return "action_process_answer"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = process_answer(user_response)
+        dispatcher.utter_message(text=response)
+        return []
+
 class ActionGoodbye(Action):
     def name(self) -> str:
         return "action_goodbye"
