@@ -1,169 +1,201 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - Hej
-    - hej
-    - Hejka
-    - hejka
-    - Cześć
-    - czesc
-    - Siema
-    - siema
-    - Hello
-    - helo
-    - Dzień dobry
-    - dzien dobry
-    - Dobry dzień
-    - dobry dzien
-    - Witaj
-    - witaj
-    - witam czule
-    - Witaj ponownie
-    - Cześć wszystkim
-    - Eluwina 
-    - hejka naklejka 
-    - Jest tu ktoś?
-    - Hello darkness my old friend
-    - halo 
+  - intent: greet
+    examples: |
+      - Hej
+      - hej
+      - Hejka
+      - hejka
+      - Cześć
+      - czesc
+      - Siema
+      - siema
+      - Hello
+      - helo
+      - Dzień dobry
+      - dzien dobry
+      - Dobry dzień
+      - dobry dzien
+      - Witaj
+      - witaj
+      - witam czule
+      - Witaj ponownie
+      - Cześć wszystkim
+      - Eluwina 
+      - hejka naklejka 
+      - Jest tu ktoś?
+      - Hello darkness my old friend
+      - halo 
 
-- intent: request_start
-  examples: |
-    - Możemy zaczynać?
-    - mozemy zaczynac
-    - Chcę już mieć to za sobą
-    - start
-    - Start
-    - Zaczynamy
-    - Lecimy
-    - Dawaj
-
-- intent: affirm
-  examples: |
-    - Tak
-    - tak
-    - ta
-    - Zgadza się
-    - zgadam sie
-    - Oczywiście
-    - oczywiscie
-    - oczywiście
-    - To brzmi dobrze
-    - dobrze
-    - git
-    - Poprawnie
-    - Może być
-    - moze byc
-    - Zaczynaj
-    - Zaczynajmy
-    - jes
-    - yes
-    - yeah
-    - zaczynamy
-
-- intent: deny
-  examples: |
-    - Nie
-    - nie
-    - nie mam czasu
-    - nie dzięki
-    - nie dzieki
-    - nie dziękuję
-    - nie dziekuje
-    - Nie, dzięki 
-    - Nie, dziękuję
-    - No
-    - Nie tym razem
-    - mam inne plany
-    - Mam inne plany
-
-- intent: thankyou
-  examples: |
-    - Dziękuję za odpowiedzi
-    - Dziekuje za odpowiedzi
-    - dzięki
-    - dzieki
-
-#- intent: chitchat
-#  examples: |
-
-- intent: stop
-  examples: |
-    - nara
-    - Dość
-    - dosc
-    - koniec
-    - Koniec
-    - idę stąd
-    - Coś jeszcze?
-    - cos jeszcze
-    - skończ już 
-    - skoncz juz
-    - stop
-    - STOP
-    - Stop
-    - To wszystko?
-
-#- intent: bot_challenge
-  #examples: |
-    #- Czy jesteś botem?
-    #- Czy jesteś człowiekiem?
-    #- Czy rozmawiam z botem?
-    #- Czy rozmawiam z człowiekiem?
-    #- czy jestes botem?
-    #- czy jestes czlowiekiem?
-    #- czy rozmawiam z botem?
-    #- czy rozmawiam z czlowiekiem?
-
-- intent: mood_happy
-  examples: |
-    - idealnie
-    - świetnie
-    - wspaniale
-    - czuję się dobrze
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - smutno mi
-    - jestem smutny
-    - nie czuję się dobrze
-    - rozczarowałeś mnie
-    - super smutno
-    - jestem nieszczęśliwy
-    
-- intent: goodbye
-  examples: |
-    - see you
-    - pa
-    - do zobaczenia
-    - Do zobaczenia
-    - Miłego dnia
-    - Do widzenia
+  - intent: start
+    examples: |
+      - Możemy zaczynać?
+      - mozemy zaczynac
+      - Chcę już mieć to za sobą
+      - start
+      - Start
+      - Zaczynamy
+      - Lecimy
+      - Dawaj
+      - Gotowy do startu
+      - Jestem gotów, zaczynajmy
+      - Proszę, zaczynajmy
+      - Czas start
+      - Możemy ruszać
+      - Ruszajmy
+      - Rozpoczynamy
+      - No to jedziemy
+      - Działamy
+      - Zacznijmy już
+      - Pora na start
+      - Do dzieła
+      - Ruszamy z tym
+      - Zaczynamy, proszę
+      - Startujemy
+      - Zróbmy to
+      - Zaczynamy teraz
+      - Jestem gotów, dawaj
+      - Czas na start
+      - Startujmy
+      - Chcę to zacząć teraz
+      - Proszę rozpocząć
+      - Gotowy, zaczynajmy
+      - Jedziemy z tym
+      - Możemy zaczynać, proszę
+      - Wystartujmy
+      - Ruszajmy już
+      - Pora zaczynać
+      - Chodźmy do tego
+      - Rozpocznijmy teraz
+      - Jestem gotowy, zaczynajmy
+      - Zaczynamy natychmiast
+      - Proszę, start
+      - Teraz startujemy
+      - Możemy ruszać, dawaj
+      - Start teraz
+      - Działajmy
+      - Zacznijmy to
+      - Proszę, ruszajmy
+      - Startujemy teraz
+      - Proszę, zaczynajmy natychmiast
+      - Możemy startować
+      - Startujmy już
+      - Chcę to mieć za sobą, zaczynajmy
+      - Ruszajmy natychmiast
+      - Rozpoczynamy teraz
+      - Zaczynajmy już teraz
+      - Czas zaczynać
+      - No to lecimy
+      - OK, zaczynajmy
+      - Zaczynajmy
+      - Dobra, start
+      - Już czas, zaczynamy
+      - Już możemy zaczynać
+      - Dawaj, zaczynamy
+      - OK, ruszajmy
+      - Ruszamy
+      - Czas na to
+      - Teraz zaczynajmy
+      - Zróbmy to teraz
+      - Dobrze, zaczynamy
+      - Jestem gotowy, start
+      - Już, startujemy
+      - No to dawaj
+      - Start teraz, proszę
+      - OK, do dzieła
+      - Teraz, proszę
+      - Ruszmy z tym
+      - Już zaczynamy
+      - Czas ruszać
+      - Dawajmy
+      - Ruszajmy z tym
+      - Już teraz
+      - Zaczynamy natychmiast
+      - Teraz ruszamy
+      - Start od zaraz
+      - Gotowy, start
+      - Już ruszamy
+      - No to ruszamy
+      - Już czas
+      - Pora na to
+      - Możemy już
+      - Już, dawajmy
+      - Teraz działamy
+      - Zaczynajmy to
+      - Już, do dzieła
+      - Startujmy od razu
+      - Już możemy startować
 
 
-- lookup: keywords
-  examples: |
-    - BHP
-    - bhp
-    - bezpieczeństwo
-    - bezpieczenstwo
-    - niebezpieczenstwo
-    - papieros
-    - papierosy
-    - monitorują
-    - monitoruja
-    - sprawdzają
-    - sprawdzaja
-    - weryfikują
-    - weryfikuja
-    - pracodawca
-    - linia
-    - produkcja
-    - produkcyjna
-    - ergonomia
-    - ergonomię
-    - ergonomie
+  - intent: answer_question_1
+    examples: |
+      - Tak, mamy system XYZ
+      - Używamy systemu ABC do monitorowania czasu pracy
+      - Nie, nie mamy takiego systemu
+      
+  - intent: answer_question_2
+    examples: |
+      - Tak, posiadamy rozbudowany system monitorowania czasu pracy o nazwie XYZ.
+      - Używamy systemu ABC, który jest rozbudowanym narzędziem do monitorowania czasu pracy.
+      - Nie, nasza firma korzysta z własnego systemu monitorowania czasu pracy.
+  
+  - intent: answer_question_3
+    examples: |
+      - Tak, zastosowaliśmy system XYZ do monitorowania czasu pracy.
+      - Używamy systemu ABC, który umożliwia skuteczne monitorowanie czasu pracy pracowników.
+      - Nie, nie posiadamy specjalistycznego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_4
+    examples: |
+      - Tak, nasza firma korzysta z systemu XYZ do monitorowania czasu pracy.
+      - Używamy zaawansowanego systemu ABC do monitorowania aktywności pracowników.
+      - Nie, nie mamy dedykowanego systemu.
+
+  - intent: answer_question_5
+    examples: |
+      - Tak, dysponujemy systemem XYZ, który umożliwia skuteczne zarządzanie czasem pracy.
+      - Używamy systemu ABC, który jest kompleksowym narzędziem do monitorowania czasu pracy.
+      - Nie, nie korzystamy z żadnego zewnętrznego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_6
+    examples: |
+      - Tak, posiadamy system XYZ, który automatyzuje procesy związane z zarządzaniem czasem pracy.
+      - Używamy systemu ABC, który jest integralną częścią naszej strategii zarządzania czasem pracy.
+      - Nie, nie mamy wdrożonego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_7
+    examples: |
+      - Tak, stosujemy system XYZ, który pomaga w efektywnym monitorowaniu czasu pracy.
+      - Używamy systemu ABC, który zapewnia kompleksowe wsparcie w zarządzaniu czasem pracy.
+      - Nie, nie dysponujemy dedykowanym systemem do monitorowania czasu pracy.
+
+  - intent: answer_question_8
+    examples: |
+      - Tak, posiadamy zaawansowany system XYZ, który umożliwia dokładne śledzenie czasu pracy pracowników.
+      - Używamy systemu ABC, który jest dostosowany do naszych specyficznych potrzeb dotyczących zarządzania czasem pracy.
+      - Nie, nasza firma nie korzysta z zewnętrznego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_9
+    examples: |
+      - Tak, dysponujemy systemem XYZ, który efektywnie wspiera zarządzanie czasem pracy w naszej organizacji.
+      - Używamy systemu ABC, który umożliwia skuteczne śledzenie czasu pracy pracowników na różnych poziomach.
+      - Nie, nie mamy dedykowanego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_10
+    examples: |
+      - Tak, mamy wdrożony system XYZ, który jest kluczowym narzędziem do zarządzania czasem pracy w naszej firmie.
+      - Używamy systemu ABC, który umożliwia skuteczne monitorowanie czasu pracy na różnych poziomach organizacyjnych.
+      - Nie, nie korzystamy z zewnętrznego systemu do monitorowania czasu pracy.
+
+  - intent: answer_question_11
+    examples: |
+      - Tak, posiadamy system XYZ, który zapewnia kompleksowe wsparcie w zarządzaniu czasem pracy pracowników.
+      - Używamy systemu ABC, który jest kluczowym elementem naszej strategii zarządzania czasem pracy.
+      - Nie, nie mamy dedykowanego systemu do monitorowania.
+
+  - intent: answer_question_12
+    examples: |
+      - Tak
+      - Używamy
+      - Nie

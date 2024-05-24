@@ -1,37 +1,81 @@
 version: "3.1"
 
 stories:
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: request_start
-  - action: utter_start
-  - action: action_listen
-  - intent: goodbye
-  - action: utter_goodbye
+  - story: greet and start
+    steps:
+      - intent: greet
+      - action: action_greet
+      - intent: start
+      - action: action_start
 
-#- story: sad path 1
-  #steps:
-  #- intent: greet
-  #- action: utter_greet
-  #- intent: mood_unhappy
-  #- action: utter_cheer_up
-  #- intent: utter_affirm
-  #- action: utter_happy
+  - story: ask and answer question 1
+    steps:
+      - action: action_ask_question_1
+      - intent: answer_question_1
+      - action: action_process_answer_1
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - intent: deny
-  - action: utter_deny
-  - intent: goodbye
-  - action: utter_goodbye
+  - story: ask and answer question 2
+    steps:
+      - action: action_ask_question_2
+      - intent: answer_question_2
+      - action: action_process_answer_2
 
-- story: thank you
-  steps:
-  - intent: thankyou
-  - action: utter_noworries
+  - story: ask and answer question 3
+    steps:
+      - action: action_ask_question_3
+      - intent: answer_question_3
+      - action: action_process_answer_3
+
+  - story: ask and answer question 4
+    steps:
+      - action: action_ask_question_4
+      - intent: answer_question_4
+      - action: action_process_answer_4
+
+  - story: ask and answer question 5
+    steps:
+      - action: action_ask_question_5
+      - intent: answer_question_5
+      - action: action_process_answer_5
+
+  - story: ask and answer question 6
+    steps:
+      - action: action_ask_question_6
+      - intent: answer_question_6
+      - action: action_process_answer_6
+
+  - story: ask and answer question 7
+    steps:
+      - action: action_ask_question_7
+      - intent: answer_question_7
+      - action: action_process_answer_7
+
+  - story: ask and answer question 8
+    steps:
+      - action: action_ask_question_8
+      - intent: answer_question_8
+      - action: action_process_answer_8
+
+  - story: ask and answer question 9
+    steps:
+      - action: action_ask_question_9
+      - intent: answer_question_9
+      - action: action_process_answer_9
+
+  - story: ask and answer question 10
+    steps:
+      - action: action_ask_question_10
+      - intent: answer_question_10
+      - action: action_process_answer_10
+
+  - story: ask and answer question 11
+    steps:
+      - action: action_ask_question_11
+      - intent: answer_question_11
+      - action: action_process_answer_11
+
+  - story: ask and answer question 12
+    steps:
+      - action: action_ask_question_12
+      - intent: answer_question_12
+      - action: action_process_answer_12
