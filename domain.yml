@@ -2,57 +2,78 @@ version: "3.1"
 
 intents:
   - greet
-  - affirm
-  - deny
-  - thankyou
-  #- chitchat
-  - request_start
-  - stop
-  - mood_happy
-  - mood_unhappy
-  #- bot_challenge
-  - goodbye
+  - start
+  - answer_question_1
+  - answer_question_2
+  - answer_question_3
+  - answer_question_4
+  - answer_question_5
+  - answer_question_6
+  - answer_question_7
+  - answer_question_8
+  - answer_question_9
+  - answer_question_10
+  - answer_question_11
+  - answer_question_12
+
+actions:
+  - action_greet
+  - action_start
+  - action_ask_question_1
+  - action_process_answer_1
+  - action_ask_question_2
+  - action_process_answer_2
+  - action_ask_question_3
+  - action_process_answer_3
+  - action_ask_question_4
+  - action_process_answer_4
+  - action_ask_question_5
+  - action_process_answer_5
+  - action_ask_question_6
+  - action_process_answer_6
+  - action_ask_question_7
+  - action_process_answer_7
+  - action_ask_question_8
+  - action_process_answer_8
+  - action_ask_question_9
+  - action_process_answer_9
+  - action_ask_question_10
+  - action_process_answer_10
+  - action_ask_question_11
+  - action_process_answer_11
+  - action_ask_question_12
+  - action_process_answer_12
 
 responses:
   utter_greet:
-  - text: "Witaj! Jak mogę Ci pomóc?"
-
-  utter_affirm:
-  - text: "Zrozumiałem. Świetnie!"
-
-  utter_deny:
-  - text: "Rozumiem. Dziękuję za informację."
-
-  utter_noworries:
-  - text: "Nie ma sprawy!"
-
+    - text: "Cześć! Jak mogę Ci pomóc?"
   utter_start:
-  - text: "Do dzieła!"
+    - text: "Czy zaczynamy?"
+  utter_ask_question_1:
+    - text: "Czy istnieje system monitorujący czas pracy pracowników? Jaki to system?"
+  utter_ask_question_2:
+    - text: "Jakie są konsekwencje nieprzestrzegania wymogów dotyczących czasu pracy?"
+  utter_ask_question_3:
+    - text: "Jak przestrzegane są przepisy BHP?"
+  utter_ask_question_4:
+    - text: "Jak Personel jest szkolony w zakresie przestrzegania przepisów BHP?"
+  utter_ask_question_5:
+    - text: "W jaki sposób Pracodawca zapewnia możliwość udzielenia pierwszej pomocy?"
+  utter_ask_question_6:
+    - text: "Jakie kroki podejmowane są w przypadku stwierdzenia naruszeń przepisów BHP?"
+  utter_ask_question_7:
+    - text: "Czy na terenie zakładu pracy obowiązuje zakaz palenia papierosów? Jeżeli tak, jak egzekwowane jest złamanie zakazu?"
+  utter_ask_question_8:
+    - text: "Jakie są najczęstsze przyczyny zakłóceń w pracy niezależnych od pracowników?"
+  utter_ask_question_9:
+    - text: "Jakie działania podejmowane są w celu minimalizacji wpływu zakłóceń zewnętrznych na wydajność i efektywność pracy?"
+  utter_ask_question_10:
+    - text: "Jak firma radzi sobie z awariami technicznymi podczas pracy linii produkcyjnej?"
+  utter_ask_question_11:
+    - text: "Czy są prowadzone szkolenia z obsługi technicznej maszyn i urządzeń? Jak często są prowadzone te szkolenia?"
+  utter_ask_question_12:
+    - text: "Czy masz jeszcze jakieś pytania lub wątpliwości dotyczące BHP i czasu pracy?"
 
-  #utter_chitchat:
-  #- text: "Oczywiście! Czym mogę się z Tobą podzielić?"
-
-  utter_stop:
-  - text: "Dobrze, kończymy na dzisiaj."
-
-  #utter_did_that_help:
-  #- text: "Czy mogę Ci jeszcze jakoś pomóc?"
-
-  utter_happy:
-  - text: "Super, oby tak dalej!"
-
-  utter_cheer_up:
-  - text: "Czy mogę Ci jakoś poprawić humor?"
-
-  utter_goodbye:
-  - text: "Do widzenia! Miłego dnia!"
-
-  #utter_iamabot:
-  #- text: "Jestem botem, działającym na platformie Rasa."
-
-actions:
-  #- action_
-  - action_ask_question
 
 session_config:
   session_expiration_time: 60

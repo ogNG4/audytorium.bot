@@ -1,48 +1,127 @@
 version: "3.1"
 
 rules:
+  - rule: Greet and start conversation
+    steps:
+      - intent: greet
+      - action: action_greet
 
-- rule: Greet user
-  steps:
-  - intent: greet
-  - action: utter_greet
+  - rule: Ask question 1
+    steps:
+      - action: action_ask_question_1
 
-- rule: Request start audition
-  steps:
-  - intent: request_start
-  - action: utter_start
+  - rule: Process answer 1
+    steps:
+      - intent: answer_question_1
+      - action: action_process_answer_1
 
-- rule: Affirm 
-  steps:
-  - intent: affirm
-  - action: utter_affirm
+  - rule: Process answer 2
+    steps:
+      - intent: answer_question_2
+      - action: action_process_answer_2
 
-- rule: Deny anytime the user says something unknown
-  steps:
-  - intent: deny
-  - action: utter_deny
+  - rule: Process answer 3
+    steps:
+      - intent: answer_question_3
+      - action: action_process_answer_3
 
-- rule: Thank you
-  steps:
-  - intent: thankyou
-  - action: utter_noworries
+  - rule: Process answer 4
+    steps:
+      - intent: answer_question_4
+      - action: action_process_answer_4
 
-#- rule: Chitchat
-  #steps:
-  #- intent: chitchat
-  #- action: utter_chitchat
+  - rule: Process answer 5
+    steps:
+      - intent: answer_question_5
+      - action: action_process_answer_5
 
-- rule: Stop when user says stop
-  steps:
-  - intent: stop
-  - action: utter_stop
+  - rule: Process answer 6
+    steps:
+      - intent: answer_question_6
+      - action: action_process_answer_6
 
-#- rule: Say 'I am a bot' anytime the user challenges
-  #steps:
-  #- intent: bot_challenge
-  #- action: utter_iamabot
+  - rule: Process answer 7
+    steps:
+      - intent: answer_question_7
+      - action: action_process_answer_7
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Process answer 8
+    steps:
+      - intent: answer_question_8
+      - action: action_process_answer_8
+
+  - rule: Process answer 9
+    steps:
+      - intent: answer_question_9
+      - action: action_process_answer_9
+
+  - rule: Process answer 10
+    steps:
+      - intent: answer_question_10
+      - action: action_process_answer_10
+
+  - rule: Process answer 11
+    steps:
+      - intent: answer_question_11
+      - action: action_process_answer_11
+
+  - rule: Process answer 12
+    steps:
+      - intent: answer_question_12
+      - action: action_process_answer_12
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_1
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_2
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_3
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_4
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_5
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_6
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_7
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_8
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_9
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_10
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_11
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_12
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_greet
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_start
