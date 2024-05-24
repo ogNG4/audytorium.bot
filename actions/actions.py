@@ -26,7 +26,7 @@ class ActionAskQuestion1(Action):
         return "action_ask_question_1"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Czy istnieje system monitorujący czas pracy pracowników? Jaki to system?")
+        dispatcher.utter_message(text="Jakie są konsekwencje nieprzestrzegania wymogów dotyczących czasu pracy?")
         return []
 
 class ActionProcessAnswer1(Action):
@@ -35,7 +35,7 @@ class ActionProcessAnswer1(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. System monitorujący to: {user_response}"
+        response = f"Jakie są konsekwencje nieprzestrzegania wymogów dotyczących czasu pracy?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -44,7 +44,7 @@ class ActionAskQuestion2(Action):
         return "action_ask_question_2"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jakie są konsekwencje nieprzestrzegania wymogów dotyczących czasu pracy?")
+        dispatcher.utter_message(text="Jak przestrzegane są przepisy BHP?")
         return []
 
 class ActionProcessAnswer2(Action):
@@ -53,7 +53,7 @@ class ActionProcessAnswer2(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Konsekwencje nieprzestrzegania to: {user_response}"
+        response = f"Jak przestrzegane są przepisy BHP?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -62,7 +62,7 @@ class ActionAskQuestion3(Action):
         return "action_ask_question_3"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jak przestrzegane są przepisy BHP?")
+        dispatcher.utter_message(text="Jak Personel jest szkolony w zakresie przestrzegania przepisów BHP?")
         return []
 
 class ActionProcessAnswer3(Action):
@@ -71,18 +71,16 @@ class ActionProcessAnswer3(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Przestrzeganie przepisów BHP wygląda tak: {user_response}"
+        response = f"Jak Personel jest szkolony w zakresie przestrzegania przepisów BHP?"
         dispatcher.utter_message(text=response)
         return []
-
-# Dalej według tego samego schematu dla pozostałych pytań i odpowiedzi...
 
 class ActionAskQuestion4(Action):
     def name(self) -> str:
         return "action_ask_question_4"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jak Personel jest szkolony w zakresie przestrzegania przepisów BHP?")
+        dispatcher.utter_message(text="W jaki sposób Pracodawca zapewnia możliwość udzielenia pierwszej pomocy?")
         return []
 
 class ActionProcessAnswer4(Action):
@@ -91,7 +89,7 @@ class ActionProcessAnswer4(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Szkolenie personelu wygląda tak: {user_response}"
+        response = f"W jaki sposób Pracodawca zapewnia możliwość udzielenia pierwszej pomocy?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -100,7 +98,7 @@ class ActionAskQuestion5(Action):
         return "action_ask_question_5"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="W jaki sposób Pracodawca zapewnia możliwość udzielenia pierwszej pomocy?")
+        dispatcher.utter_message(text="Jakie kroki podejmowane są w przypadku stwierdzenia naruszeń przepisów BHP?")
         return []
 
 class ActionProcessAnswer5(Action):
@@ -109,7 +107,7 @@ class ActionProcessAnswer5(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Zapewnienie pierwszej pomocy wygląda tak: {user_response}"
+        response = f"Jakie kroki podejmowane są w przypadku stwierdzenia naruszeń przepisów BHP?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -118,7 +116,7 @@ class ActionAskQuestion6(Action):
         return "action_ask_question_6"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jakie kroki podejmowane są w przypadku stwierdzenia naruszeń przepisów BHP?")
+        dispatcher.utter_message(text="Czy na terenie zakładu pracy obowiązuje zakaz palenia papierosów? Jeżeli tak, jak egzekwowane jest złamanie zakazu?")
         return []
 
 class ActionProcessAnswer6(Action):
@@ -127,7 +125,7 @@ class ActionProcessAnswer6(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Kroki podejmowane w przypadku naruszeń przepisów BHP to: {user_response}"
+        response = f"Czy na terenie zakładu pracy obowiązuje zakaz palenia papierosów? Jeżeli tak, jak egzekwowane jest złamanie zakazu?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -136,7 +134,7 @@ class ActionAskQuestion7(Action):
         return "action_ask_question_7"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Czy na terenie zakładu pracy obowiązuje zakaz palenia papierosów? Jeżeli tak, jak egzekwowane jest złamanie zakazu?")
+        dispatcher.utter_message(text="Jakie są najczęstsze przyczyny zakłóceń w pracy niezależnych od pracowników?")
         return []
 
 class ActionProcessAnswer7(Action):
@@ -145,7 +143,7 @@ class ActionProcessAnswer7(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Zakaz palenia i jego egzekwowanie wygląda tak: {user_response}"
+        response = f"Jakie są najczęstsze przyczyny zakłóceń w pracy niezależnych od pracowników?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -154,7 +152,7 @@ class ActionAskQuestion8(Action):
         return "action_ask_question_8"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jakie są najczęstsze przyczyny zakłóceń w pracy niezależnych od pracowników?")
+        dispatcher.utter_message(text="Jakie działania podejmowane są w celu minimalizacji wpływu zakłóceń zewnętrznych na wydajność i efektywność pracy?")
         return []
 
 class ActionProcessAnswer8(Action):
@@ -163,7 +161,7 @@ class ActionProcessAnswer8(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Najczęstsze przyczyny zakłóceń to: {user_response}"
+        response = f"Jakie działania podejmowane są w celu minimalizacji wpływu zakłóceń zewnętrznych na wydajność i efektywność pracy?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -172,7 +170,7 @@ class ActionAskQuestion9(Action):
         return "action_ask_question_9"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jakie działania podejmowane są w celu minimalizacji wpływu zakłóceń zewnętrznych na wydajność i efektywność pracy?")
+        dispatcher.utter_message(text="Jak firma radzi sobie z awariami technicznymi podczas pracy linii produkcyjnej?")
         return []
 
 class ActionProcessAnswer9(Action):
@@ -181,7 +179,7 @@ class ActionProcessAnswer9(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Działania minimalizujące wpływ zakłóceń to: {user_response}"
+        response = f"Jak firma radzi sobie z awariami technicznymi podczas pracy linii produkcyjnej?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -190,7 +188,7 @@ class ActionAskQuestion10(Action):
         return "action_ask_question_10"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Jak firma radzi sobie z awariami technicznymi podczas pracy linii produkcyjnej?")
+        dispatcher.utter_message(text="Jakiego typu uwagi pracownicy zgłaszają dotyczące infrastruktury?")
         return []
 
 class ActionProcessAnswer10(Action):
@@ -199,7 +197,7 @@ class ActionProcessAnswer10(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Radzenie sobie z awariami technicznymi wygląda tak: {user_response}"
+        response = f"Jakiego typu uwagi pracownicy zgłaszają dotyczące infrastruktury?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -208,7 +206,7 @@ class ActionAskQuestion11(Action):
         return "action_ask_question_11"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Czy są prowadzone szkolenia z obsługi technicznej maszyn i urządzeń? Jak często są prowadzone te szkolenia?")
+        dispatcher.utter_message(text="Jak firma zapewnia zgodność z regulacjami dotyczącymi ochrony środowiska?")
         return []
 
 class ActionProcessAnswer11(Action):
@@ -217,7 +215,7 @@ class ActionProcessAnswer11(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Szkolenia z obsługi technicznej maszyn i urządzeń są prowadzone tak: {user_response}"
+        response = f"Jak firma zapewnia zgodność z regulacjami dotyczącymi ochrony środowiska?"
         dispatcher.utter_message(text=response)
         return []
 
@@ -226,7 +224,7 @@ class ActionAskQuestion12(Action):
         return "action_ask_question_12"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Czy masz jeszcze jakieś pytania lub wątpliwości dotyczące BHP i czasu pracy?")
+        dispatcher.utter_message(text="Jakie istnieją plany ewakuacyjne i ćwiczenia dla pracowników w przypadku nagłych sytuacji, takich jak pożar czy awaria?")
         return []
 
 class ActionProcessAnswer12(Action):
@@ -235,6 +233,6 @@ class ActionProcessAnswer12(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         user_response = tracker.latest_message['text']
-        response = f"Dziękuję za odpowiedź. Dodatkowe pytania lub wątpliwości: {user_response}"
+        response = f"Jakie istnieją plany ewakuacyjne i ćwiczenia dla pracowników w przypadku nagłych sytuacji, takich jak pożar czy awaria?"
         dispatcher.utter_message(text=response)
         return []
