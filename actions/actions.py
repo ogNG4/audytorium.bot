@@ -236,3 +236,129 @@ class ActionProcessAnswer12(Action):
         response = f"Jakie istnieją plany ewakuacyjne i ćwiczenia dla pracowników w przypadku nagłych sytuacji, takich jak pożar czy awaria?"
         dispatcher.utter_message(text=response)
         return []
+
+class ActionAskQuestion13(Action):
+    def name(self) -> str:
+        return "action_ask_question_13"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zapobiegania nadużyć w obszarze magazynowania?")
+        return []
+
+class ActionProcessAnswer13(Action):
+    def name(self) -> str:
+        return "action_process_answer_13"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jakie są procedury zapobiegania nadużyć w obszarze magazynowania?"
+        dispatcher.utter_message(text=response)
+        return []
+    
+class ActionAskQuestion14(Action):
+    def name(self) -> str:
+        return "action_ask_question_14"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma monitoruje i ocenia wydajność procesów produkcyjnych i magazynowych? Jakie są stosowane wskaźniki wydajności?")
+        return []
+
+class ActionProcessAnswer14(Action):
+    def name(self) -> str:
+        return "action_process_answer_14"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jak firma monitoruje i ocenia wydajność procesów produkcyjnych i magazynowych? Jakie są stosowane wskaźniki wydajności?"
+        dispatcher.utter_message(text=response)
+        return []    
+    
+class ActionAskQuestion15(Action):
+    def name(self) -> str:
+        return "action_ask_question_15"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie działania podejmowane są w celu minimalizacji strat materiałowych w procesie produkcyjnym i magazynowym?")
+        return []
+
+class ActionProcessAnswer15(Action):
+    def name(self) -> str:
+        return "action_process_answer_15"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jakie działania podejmowane są w celu minimalizacji strat materiałowych w procesie produkcyjnym i magazynowym?"
+        dispatcher.utter_message(text=response)
+        return []       
+    
+class ActionAskQuestion16(Action):
+    def name(self) -> str:
+        return "action_ask_question_16"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma reaguje na zmiany technologiczne i innowacje w celu poprawy wydajności i konkurencyjności?")
+        return []
+
+class ActionProcessAnswer16(Action):
+    def name(self) -> str:
+        return "action_process_answer_16"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jak firma reaguje na zmiany technologiczne i innowacje w celu poprawy wydajności i konkurencyjności?"
+        dispatcher.utter_message(text=response)
+        return []    
+    
+class ActionAskQuestion17(Action):
+    def name(self) -> str:
+        return "action_ask_question_17"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zapewnienia jakości wyrobów na każdym etapie produkcji i magazynowania?")
+        return []
+
+class ActionProcessAnswer17(Action):
+    def name(self) -> str:
+        return "action_process_answer_17"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jakie są procedury zapewnienia jakości wyrobów na każdym etapie produkcji i magazynowania?"
+        dispatcher.utter_message(text=response)
+        return []        
+    
+class ActionAskQuestion18(Action):
+    def name(self) -> str:
+        return "action_ask_question_18"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jakie są procedury zarządzania ryzykiem w obszarze produkcji i magazynowania, i jak są one wdrażane?")
+        return []
+
+class ActionProcessAnswer18(Action):
+    def name(self) -> str:
+        return "action_process_answer_18"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jakie są procedury zarządzania ryzykiem w obszarze produkcji i magazynowania, i jak są one wdrażane?"
+        dispatcher.utter_message(text=response)
+        return []            
+    
+class ActionAskQuestion19(Action):
+    def name(self) -> str:
+        return "action_ask_question_19"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text="Jak firma minimalizuje wpływ zmiany dostawców na ciągłość produkcji?")
+        return []
+
+class ActionProcessAnswer19(Action):
+    def name(self) -> str:
+        return "action_process_answer_19"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_response = tracker.latest_message['text']
+        response = f"Jak firma minimalizuje wpływ zmiany dostawców na ciągłość produkcji?"
+        dispatcher.utter_message(text=response)
+        return []      
