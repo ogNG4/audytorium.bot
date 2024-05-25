@@ -70,6 +70,46 @@ rules:
       - intent: answer_question_12
       - action: action_process_answer_12
 
+  - rule: Process answer 13
+    steps:
+      - intent: answer_question_13
+      - action: action_process_answer_13
+
+  - rule: Process answer 14
+    steps:
+      - intent: answer_question_14
+      - action: action_process_answer_14
+
+  - rule: Process answer 15
+    steps:
+      - intent: answer_question_15
+      - action: action_process_answer_15
+
+  - rule: Process answer 16
+    steps:
+      - intent: answer_question_16
+      - action: action_process_answer_16
+
+  - rule: Process answer 17
+    steps:
+      - intent: answer_question_17
+      - action: action_process_answer_17
+
+  - rule: Process answer 18
+    steps:
+      - intent: answer_question_18
+      - action: action_process_answer_18
+
+  - rule: Process answer 19
+    steps:
+      - intent: answer_question_19
+      - action: action_process_answer_19
+
+  - rule: Process answer 20
+    steps:
+      - intent: answer_question_20
+      - action: action_process_answer_20
+    
   - rule: Utterance not used warnings
     steps:
       - action: utter_ask_question_1
@@ -117,6 +157,38 @@ rules:
   - rule: Utterance not used warnings
     steps:
       - action: utter_ask_question_12
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_13
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_14
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_15
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_16
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_17
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_18
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_19
+
+  - rule: Utterance not used warnings
+    steps:
+      - action: utter_ask_question_20    
 
   - rule: Utterance not used warnings
     steps:

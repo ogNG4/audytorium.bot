@@ -15,6 +15,14 @@ intents:
   - answer_question_10
   - answer_question_11
   - answer_question_12
+  - answer_question_13
+  - answer_question_14
+  - answer_question_15
+  - answer_question_16
+  - answer_question_17
+  - answer_question_18
+  - answer_question_19
+  - answer_question_20
 
 actions:
   - action_greet
@@ -43,6 +51,22 @@ actions:
   - action_process_answer_11
   - action_ask_question_12
   - action_process_answer_12
+  - action_ask_question_13
+  - action_process_answer_13
+  - action_ask_question_14
+  - action_process_answer_14
+  - action_ask_question_15
+  - action_process_answer_15
+  - action_ask_question_16
+  - action_process_answer_16
+  - action_ask_question_17
+  - action_process_answer_17
+  - action_ask_question_18
+  - action_process_answer_18
+  - action_ask_question_19
+  - action_process_answer_19
+  - action_ask_question_20
+  - action_process_answer_20
 
 responses:
   utter_greet:
@@ -73,7 +97,22 @@ responses:
     - text: "Czy są prowadzone szkolenia z obsługi technicznej maszyn i urządzeń? Jak często są prowadzone te szkolenia?"
   utter_ask_question_12:
     - text: "Czy masz jeszcze jakieś pytania lub wątpliwości dotyczące BHP i czasu pracy?"
-
+  utter_ask_question_13:
+    - text: "Jakie istnieją plany ewakuacyjne i ćwiczenia dla pracowników w przypadku nagłych sytuacji, takich jak pożar czy awaria?"
+  utter_ask_question_14:
+    - text: "Jakie są procedury zapobiegania nadużyć w obszarze magazynowania?"  
+  utter_ask_question_15:
+    - text: "Jak firma monitoruje i ocenia wydajność procesów produkcyjnych i magazynowych? Jakie są stosowane wskaźniki wydajności?"
+  utter_ask_question_16:
+    - text: "Jakie działania podejmowane są w celu minimalizacji strat materiałowych w procesie produkcyjnym i magazynowym?"
+  utter_ask_question_17:
+    - text: "Jak firma reaguje na zmiany technologiczne i innowacje w celu poprawy wydajności i konkurencyjności?"
+  utter_ask_question_18:
+    - text: "Jakie są procedury zapewnienia jakości wyrobów na każdym etapie produkcji i magazynowania?"
+  utter_ask_question_19:
+    - text: "Jakie są procedury zarządzania ryzykiem w obszarze produkcji i magazynowania, i jak są one wdrażane?"
+  utter_ask_question_20:
+    - text: "Jak firma minimalizuje wpływ zmiany dostawców na ciągłość produkcji?"
 
 session_config:
   session_expiration_time: 60

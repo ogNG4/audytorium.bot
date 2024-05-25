@@ -79,3 +79,52 @@ stories:
       - action: action_ask_question_12
       - intent: answer_question_12
       - action: action_process_answer_12
+
+  - story: ask and answer question 13
+    steps:
+      - action: action_ask_question_13
+      - intent: answer_question_13
+      - action: action_process_answer_13
+
+  - story: ask and answer question 14
+    steps:
+      - action: action_ask_question_14
+      - intent: answer_question_14
+      - action: action_process_answer_14
+
+  - story: ask and answer question 15
+    steps:
+      - action: action_ask_question_15
+      - intent: answer_question_15
+      - action: action_process_answer_15
+
+  - story: ask and answer question 16
+    steps:
+      - action: action_ask_question_16
+      - intent: answer_question_16
+      - action: action_process_answer_16
+    
+  - story: ask and answer question 17
+    steps:
+      - action: action_ask_question_17
+      - intent: answer_question_17
+      - action: action_process_answer_17
+
+  - story: ask and answer question 18
+    steps:
+      - action: action_ask_question_18
+      - intent: answer_question_18
+      - action: action_process_answer_18
+
+  - story: ask and answer question 19
+    steps:
+      - action: action_ask_question_19
+      - intent: answer_question_19
+      - action: action_process_answer_19    
+
+  - story: ask and answer question 20
+    steps:
+      - action: action_ask_question_20
+      - intent: answer_question_20
+      - action: action_process_answer_20    
+  
