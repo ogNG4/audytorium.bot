@@ -130,72 +130,161 @@ nlu:
 
   - intent: answer_question_1
     examples: |
-      - Tak, mamy system XYZ
-      - Używamy systemu ABC do monitorowania czasu pracy
-      - Nie, nie mamy takiego systemu
+      - Istnieje system monitorujący czas pracy pracowników taki jak TSheets.
+      - Do monitorowania czasu pracy firma używa systemu takiego jak Kronos.
+      - Firma wykorzystuje system Toggl, który śledzi czas pracy pracowników.
+      - BambooHR to wykorzystywany system monitorujący czas pracy.
+      - System Hubstaff monitoruje czas pracy i aktywność pracowników.
       
   - intent: answer_question_2
     examples: |
-      - Tak, posiadamy rozbudowany system monitorowania czasu pracy o nazwie XYZ.
-      - Używamy systemu ABC, który jest rozbudowanym narzędziem do monitorowania czasu pracy.
-      - Nie, nasza firma korzysta z własnego systemu monitorowania czasu pracy.
-  
+      - Pracownik może otrzymać upomnienie lub naganę.
+      - Może dojść do obniżenia wynagrodzenia lub premii.
+      - Pracownik może zostać zawieszony w obowiązkach.
+      - Może to prowadzić do zwolnienia dyscyplinarnego.
+      - Nieprzestrzeganie wymogów może wpłynąć negatywnie na awanse i rozwój kariery.
+
   - intent: answer_question_3
     examples: |
-      - Tak, zastosowaliśmy system XYZ do monitorowania czasu pracy.
-      - Używamy systemu ABC, który umożliwia skuteczne monitorowanie czasu pracy pracowników.
-      - Nie, nie posiadamy specjalistycznego systemu do monitorowania czasu pracy.
+      - W firmie regularnie odbywają się szkolenia BHP dla wszystkich pracowników.
+      - Pracownicy są zobowiązani do noszenia odpowiedniego sprzętu ochronnego.
+      - Na terenie firmy są wyznaczone i oznakowane drogi ewakuacyjne.
+      - Firma prowadzi regularne inspekcje i audyty BHP.
+      - W firmie dostępne są instrukcje BHP na stanowiskach pracy.
 
   - intent: answer_question_4
     examples: |
-      - Tak, nasza firma korzysta z systemu XYZ do monitorowania czasu pracy.
-      - Używamy zaawansowanego systemu ABC do monitorowania aktywności pracowników.
-      - Nie, nie mamy dedykowanego systemu.
+      - Pracownicy uczestniczą w obowiązkowych szkoleniach BHP podczas zatrudnienia.
+      - Szkolenia BHP są regularnie organizowane przez certyfikowanych trenerów.
+      - Firma zapewnia e-learningowe kursy BHP dostępne online dla pracowników.
+      - Nowi pracownicy przechodzą wstępne szkolenie BHP przed rozpoczęciem pracy.
+      - Okresowe szkolenia BHP są obowiązkowe dla wszystkich pracowników.
 
   - intent: answer_question_5
     examples: |
-      - Tak, dysponujemy systemem XYZ, który umożliwia skuteczne zarządzanie czasem pracy.
-      - Używamy systemu ABC, który jest kompleksowym narzędziem do monitorowania czasu pracy.
-      - Nie, nie korzystamy z żadnego zewnętrznego systemu do monitorowania czasu pracy.
+      - W firmie są wyznaczone i przeszkolone osoby odpowiedzialne za udzielanie pierwszej pomocy.
+      - Pracodawca zapewnia dostęp do apteczek pierwszej pomocy na terenie zakładu pracy.
+      - Organizowane są regularne szkolenia z udzielania pierwszej pomocy dla pracowników.
+      - Na widocznym miejscu są umieszczone instrukcje dotyczące udzielania pierwszej pomocy.
+      - Pracodawca współpracuje z zewnętrznymi służbami medycznymi w celu zapewnienia szybkiej pomocy w nagłych przypadkach.
 
   - intent: answer_question_6
     examples: |
-      - Tak, posiadamy system XYZ, który automatyzuje procesy związane z zarządzaniem czasem pracy.
-      - Używamy systemu ABC, który jest integralną częścią naszej strategii zarządzania czasem pracy.
-      - Nie, nie mamy wdrożonego systemu do monitorowania czasu pracy.
+      - Pracodawca przeprowadza wewnętrzne śledztwo w celu ustalenia przyczyn naruszeń i wprowadzenia poprawek.
+      - Osoby odpowiedzialne za bezpieczeństwo i higienę pracy raportują naruszenia do zarządu firmy.
+      - W zależności od powagi naruszenia, pracodawca może nałożyć kary dyscyplinarne na pracowników odpowiedzialnych.
+      - Firma może zatrudnić ekspertów zewnętrznych do przeprowadzenia audytu BHP i zalecenia działań naprawczych.
+      - W przypadku poważnych naruszeń, pracodawca jest zobowiązany do powiadomienia odpowiednich organów nadzoru pracy o sytuacji.
 
   - intent: answer_question_7
     examples: |
-      - Tak, stosujemy system XYZ, który pomaga w efektywnym monitorowaniu czasu pracy.
-      - Używamy systemu ABC, który zapewnia kompleksowe wsparcie w zarządzaniu czasem pracy.
-      - Nie, nie dysponujemy dedykowanym systemem do monitorowania czasu pracy.
+      - Na terenie zakładu pracy obowiązuje zakaz palenia papierosów w celu zapewnienia bezpiecznego i zdrowego środowiska pracy.
+      - Złamanie zakazu palenia może prowadzić do nałożenia kar dyscyplinarnych na pracownika przez pracodawcę.
+      - Pracodawca może przeprowadzać inspekcje terenu pracy w celu monitorowania przestrzegania zakazu palenia.
+      - Osoby złamujące zakaz mogą zostać poinformowane o naruszeniu i wezwane do przestrzegania przepisów.
+      - W niektórych przypadkach pracodawca może nawet rozważać wypowiedzenie umowy o pracę w przypadku powtarzających się naruszeń zakazu palenia papierosów.
 
   - intent: answer_question_8
     examples: |
-      - Tak, posiadamy zaawansowany system XYZ, który umożliwia dokładne śledzenie czasu pracy pracowników.
-      - Używamy systemu ABC, który jest dostosowany do naszych specyficznych potrzeb dotyczących zarządzania czasem pracy.
-      - Nie, nasza firma nie korzysta z zewnętrznego systemu do monitorowania czasu pracy.
+      - Awarie techniczne sprzętu lub oprogramowania mogą powodować zakłócenia w pracy.
+      - Problemy z dostawami surowców lub materiałów mogą spowodować opóźnienia w produkcji.
+      - Nieprzewidziane warunki pogodowe, takie jak burze czy opady śniegu, mogą wpływać na funkcjonowanie firmy.
+      - Zakłócenia w pracy mogą być spowodowane awarią systemów informatycznych lub sieci.
+      - Zmiany w przepisach prawnych lub regulacjach mogą wymagać dostosowania procedur i prowadzić do zakłóceń w pracy.
 
   - intent: answer_question_9
     examples: |
-      - Tak, dysponujemy systemem XYZ, który efektywnie wspiera zarządzanie czasem pracy w naszej organizacji.
-      - Używamy systemu ABC, który umożliwia skuteczne śledzenie czasu pracy pracowników na różnych poziomach.
-      - Nie, nie mamy dedykowanego systemu do monitorowania czasu pracy.
+      - Firma stosuje systemy zasilania awaryjnego, aby zapobiegać przestojom w przypadku awarii zasilania.
+      - Wprowadzona redundancja w systemach informatycznych pomaga w zapewnieniu ciągłości pracy firmy w przypadku awarii.
+      - Firma posiada plany kontynuacji działalności, które określają kroki do podjęcia w przypadku wystąpienia zakłóceń zewnętrznych.
+      - W firmie odbywają się regularne audyty i przeglądy infrastruktury, które pomagają w identyfikowaniu potencjalnych źródeł zakłóceń i wdrażaniu działań zapobiegawczych.
+      - Ustalanie partnerskich relacji z dostawcami i kontrahentami.
 
   - intent: answer_question_10
     examples: |
-      - Tak, mamy wdrożony system XYZ, który jest kluczowym narzędziem do zarządzania czasem pracy w naszej firmie.
-      - Używamy systemu ABC, który umożliwia skuteczne monitorowanie czasu pracy na różnych poziomach organizacyjnych.
-      - Nie, nie korzystamy z zewnętrznego systemu do monitorowania czasu pracy.
+      - Firma ma zespół techników utrzymania ruchu, gotowych szybko reagować na awarie i minimalizować przestoje w produkcji.
+      - Wprowadzono system monitorowania ciągłości pracy linii produkcyjnej, który automatycznie sygnalizuje awarie, umożliwiając szybką interwencję.
+      - Regularne przeglądy techniczne maszyn i urządzeń pomagają identyfikować potencjalne awaryjne elementy i zapobiegać przestojom.
+      - Firma może posiadać umowy serwisowe z dostawcami maszyn, gwarantujące szybką reakcję i naprawę w przypadku awarii.
+      - Wprowadzono plany kontynuacji działalności, określające procedury postępowania w przypadku awarii technicznych, minimalizujące skutki przestojów w produkcji.
 
   - intent: answer_question_11
     examples: |
-      - Tak, posiadamy system XYZ, który zapewnia kompleksowe wsparcie w zarządzaniu czasem pracy pracowników.
-      - Używamy systemu ABC, który jest kluczowym elementem naszej strategii zarządzania czasem pracy.
-      - Nie, nie mamy dedykowanego systemu do monitorowania.
+      - Uwagi dotyczące problemów z siecią internetową lub braku dostępu do danych.
+      - Zgłoszenia dotyczące awarii sprzętu biurowego, takiego jak drukarki lub komputery.
+      - Uwagi odnośnie niedziałających systemów klimatyzacji lub ogrzewania.
+      - Zgłoszenia dotyczące problemów z oświetleniem w biurze lub na terenie zakładu pracy.
+      - Uwagi od pracowników dotyczące stanu sanitariatów lub innych udogodnień infrastrukturalnych.
 
   - intent: answer_question_12
     examples: |
-      - Tak
-      - Używamy
-      - Nie
+      - Ścisłe przestrzeganie norm środowiskowych i monitorowanie emisji zanieczyszczeń.
+      - Wdrażanie praktyk zrównoważonego rozwoju, jak redukcja zużycia energii i wody.
+      - Regularne audyty środowiskowe w celu oceny wpływu działalności na środowisko.
+      - Współpraca z lokalnymi społecznościami w identyfikacji obszarów poprawy.
+      - Stałe doskonalenie procesów produkcyjnych w celu zmniejszenia negatywnego wpływu na środowisko.
+
+  - intent: answer_question_13
+    examples: |
+      - Regularne ćwiczenia ewakuacyjne są przeprowadzane w firmie.
+      - Istnieją wyznaczone punkty zbiórki na terenie firmy.
+      - Plany ewakuacyjne są regularnie omawiane i aktualizowane.
+      - Pracownicy są szkoleni w zakresie procedur ewakuacyjnych.
+      - W razie zagrożenia pracownicy są natychmiast informowani o procedurach ewakuacyjnych.
+
+  - intent: answer_question_14
+    examples: |   
+      - System monitorowania kamery CCTV jest używany do śledzenia działalności na terenie magazynu.
+      - Pracownicy mają przypisane identyfikatory osobiste i są rejestrowani przy wchodzeniu i wychodzeniu z magazynu.
+      - Przeglądy magazynu są przeprowadzane regularnie w celu wykrywania nieprawidłowości lub nadużyć.
+      - Wprowadzono procedury kontrolowania i raportowania wszelkich nieprawidłowości w procesie magazynowania.
+      - Pracownicy są szkoleni w zakresie przestrzegania zasad bezpieczeństwa i unikania nadużyć w magazynie.
+
+  - intent: answer_question_15
+    examples: |
+      - Analizuja czas cyklu i ilości wytwarzanych wadliwych produktów.
+      - Wykorzystują wskaźniki czasu obrotu zapasów i dokładność zamówień.
+      - Firma stosuje systemów ERP do gromadzenia danych i generowania raportów.
+      - Używa systemów monitorowania w czasie rzeczywistym do natychmiastowego reagowania na problemy.
+      - Przeprowadzane są regularne audyty w celu oceny zgodności ze standardami i identyfikacji obszarów do ulepszeń.
+
+  - intent: answer_question_16
+    examples: |
+      - Stale monitorowane są zużycia materiałów i identyfikacja obszarów marnotrawstwa.
+      - Wdrożono optymalizację zapasów, np. just-in-time (JIT) lub kanban.
+      - Firma szkoli pracowników w prawidłowym obchodzeniu się z materiałami.
+      - Wykorzystywane są technologie śledzenia materiałów, np. RFID, w zarządzaniu zapasami.
+      - Firma analizuje przyczyny strat materiałowych i wprowadza działania korygujące.
+      
+  - intent: answer_question_17
+    examples: |  
+      - Stale monitorowane są przez firmę trendy technologiczne i dostosowywane do nowych rozwiązań w celu poprawy procesów.
+      - Frima inwestuje w nowoczesne technologie i narzędzia, które mogą zwiększyć efektywność produkcji i magazynowania.
+      - Współpracuje z dostawcami i partnerami biznesowymi w celu wprowadzania innowacji i udoskonaleń.
+      - Firma szkoli pracowników w obsłudze nowych technologii i promuje kulturę innowacji.
+      - Udziela się w branżowych konferencjach i targach, aby poznać najnowsze osiągnięcia technologiczne i trendy.
+
+  - intent: answer_question_18
+    examples: |  
+      - Przeprowadzane są regularne kontrole jakości surowców i komponentów.
+      - Monitorowane są procesy produkcyjne w czasie rzeczywistym.
+      - Firma odpowiednio przechowywuje wyroby w magazynie.
+      - Firma robi testy jakościowe na każdym etapie produkcji.
+      - Odbywają się szkolenia personelu w procedurach kontroli jakości.
+
+  - intent: answer_question_19
+    examples: |    
+      - Firma identyfikuje potencjalne zagrożenia i wypadki poprzez przeprowadzanie analiz ryzyka na każdym etapie procesu.
+      - Opracowywuje plany działania i procedury postępowania w przypadku wystąpienia ryzyka, w celu minimalizacji skutków.
+      - Firma przeprowadza szkolenia pracowników w procedurach bezpieczeństwa oraz sposobach reagowania na nagłe sytuacje awaryjne.
+      - Stale monitorowuje środowiska pracy i warunków magazynowania w celu wykrywania potencjalnych zagrożeń i wypadków.
+      - Wdraża systemy zarządzania ryzykiem, które obejmują identyfikację, ocenę, kontrolę i monitorowanie ryzyka.
+
+  - intent: answer_question_20
+    examples: |   
+      - Opracowuje plany kontyngencji i alternatywnych źródeł dostaw.
+      - Firma ustanawia współpracę z wieloma dostawcami w celu dywersyfikacji ryzyka.
+      - Regularnie ocenia dostawców pod kątem stabilności i jakości usług.
+      - Firma wdraża systemy monitorowania zapasów i prognozowania popytu.
+      - Szkoli personel w elastycznych metodach produkcji i zarządzania zapasami.
+
